@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AboBE ФОТОЖАБ</title>
+	<style>
+		#canv {
+			width: 1000px;
+			height: 800px;
+			border: 1px solid black
+		}
+	</style>
+</head>
+<body>
+	<div class="head"></div>
+	<div class="tools">
+		<div class="coordinates">
+			<button class="toolButton" id='brush' style="font-weight: 700;">Кисть</button>
+			<button class="toolButton" id='eraser'>Ластик</button>
+			<button class="toolButton" id='clear'>Очистить</button>
+			<select id='sizeSelect'>
+				<option value="5">5</option>
+				<option value="10">10</option>
+				<option value="15">15</option>
+				<option value="20">20</option>
+			</select>
+			<input type="color" id="color">
+			
+			<br>
+			
+			<p id="x"><b>x: </b> <span id="xCoord"></span></p>
+			<p id="y"><b>y: </b> <span id="yCoord"></span></p>
+			
+		</div>
+	</div>
+	<div class="canv">
+		<canvas id="canv" width="1000" height="800"></canvas>
+	</div>
+
+	<script src="js/app.js"></script>
+</body>
+</html>
